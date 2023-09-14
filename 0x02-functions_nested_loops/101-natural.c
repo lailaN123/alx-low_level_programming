@@ -16,6 +16,6 @@ for (i = 0; i < 1024; i++)
 		s = s + i;
 	}
 }
-printf("%d", s);
+printf("%d\n", s);
 return (0);
 }
