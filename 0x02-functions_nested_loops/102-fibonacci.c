@@ -10,11 +10,9 @@ int main(void)
 	unsigned long U;
 	int i;
 
-fib1 = 1;
-fib2 = 2;
-printf("%lu, ", fib1);
-printf("%lu, ", fib2);
-for (i = 2; i <= 49; i++)
+fib1 = 0;
+fib2 = 1;
+for (i = 0; i <= 49; i++)
 {
 	U = fib1 + fib2;
 	fib1 = fib2;
