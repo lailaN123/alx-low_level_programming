@@ -16,25 +16,25 @@ for (i = 0; i <= 9; i++)
 		m = i * j;
 		if (j == 0)
 		{
-		putchar('0');
+		_putchar('0');
 		}
 		else if (m <= 9)
 		{
-		putchar(' ');
-		putchar(' ');
-		putchar(m + '0');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(m + '0');
 		}
 		else
 		{
-		putchar(' ');
-		putchar(m / 10 + '0');
-		putchar(m % 10 + '0');
+		_putchar(' ');
+		_putchar(m / 10 + '0');
+		_putchar(m % 10 + '0');
 		}
 
 		if (j < 9)
-		putchar(',');
+		_putchar(',');
 		else
-		putchar('\n');
+		_putchar('\n');
 	}
 }
 }
