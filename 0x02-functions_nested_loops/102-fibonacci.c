@@ -22,7 +22,7 @@ for (i = 2; i <= 49; i++)
 	if (i < 49)
 	printf("%lu, ", U);
 	else
-	printf("%lu", U);
+	printf("%lu ", U);
 }
 return (0);
 }
