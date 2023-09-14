@@ -12,7 +12,9 @@ int main(void)
 
 fib1 = 0;
 fib2 = 1;
-for (i = 0; i <= 49; i++)
+printf("%lu, ", fib1);
+printf("%lu, ", fib2);
+for (i = 2; i <= 49; i++)
 {
 	U = fib1 + fib2;
 	fib1 = fib2;
@@ -20,7 +22,7 @@ for (i = 0; i <= 49; i++)
 	if (i < 49)
 	printf("%lu, ", U);
 	else
-	printf("%lu ", U);
+	printf("%lu\n", U);
 }
 return (0);
 }
