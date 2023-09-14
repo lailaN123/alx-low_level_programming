@@ -19,6 +19,6 @@ do {
 	if (U % 2 == 0)
 	s = s + U;
 } while (U < 4000000);
-printf("%d\n", s);
+printf("%lu\n", s);
 return (0);
 }
