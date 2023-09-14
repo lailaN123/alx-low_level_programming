@@ -20,13 +20,13 @@ for (i = 0; i <= 9; i++)
 		}
 		else if (m <= 9)
 		{
-		putchar('.');
-		putchar('.');
+		putchar(' ');
+		putchar(' ');
 		putchar(m + '0');
 		}
 		else
 		{
-		putchar('.');
+		putchar(' ');
 		putchar(m / 10 + '0');
 		putchar(m % 10 + '0');
 		}
