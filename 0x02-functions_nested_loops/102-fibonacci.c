@@ -6,23 +6,23 @@
  */
 int main(void)
 {
-	long long int fib1, fib2;
-	long long int U;
+	unsigned long fib1, fib2;
+	unsigned long U;
 	int i;
 
 fib1 = 1;
 fib2 = 2;
-printf("%llu, ", fib1);
-printf("%llu, ", fib2);
+printf("%lu, ", fib1);
+printf("%lu, ", fib2);
 for (i = 2; i <= 49; i++)
 {
 	U = fib1 + fib2;
 	fib1 = fib2;
 	fib2 = U;
 	if (i < 49)
-	printf("%llu, ", U);
+	printf("%lu, ", U);
 	else
-	printf("%llu", U);
+	printf("%lu", U);
 }
 return (0);
 }
