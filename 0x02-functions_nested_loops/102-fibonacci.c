@@ -10,8 +10,8 @@ int main(void)
 	unsigned long U;
 	int i;
 
-fib1 = 0;
-fib2 = 1;
+fib1 = 1;
+fib2 = 2;
 printf("%lu, ", fib1);
 printf("%lu, ", fib2);
 for (i = 2; i <= 49; i++)
