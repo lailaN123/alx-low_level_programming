@@ -28,7 +28,7 @@ count2++;
 }
 src = orig1;
 dest = orig2;
-for (i = 0; i < n; i++)
+for (i = 0; i < n && (src[i] != '\0' || i == 0); i++)
 {
 *dest = *src;
 src++;
