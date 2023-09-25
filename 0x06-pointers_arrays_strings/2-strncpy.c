@@ -1,5 +1,5 @@
-#include"main.h"
 #include<stdio.h>
+#include"main.h"
 /**
  * _strncpy - function that copies a string
  * @dest: string to copy
@@ -34,7 +34,12 @@ for (i = 0; i < n && (src[i] != '\0' || i == 0); i++)
 src++;
 dest++;
 }
+while (i < n)
+{
+*dest = '\0';
+dest++;
+i++;
+}
 dest = orig2;
 return (dest);
 }
-
