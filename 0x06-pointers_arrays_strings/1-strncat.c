@@ -12,8 +12,6 @@ char *_strncat(char *dest, char *src, int n)
 {
 int count1 = 0;
 int count2 = 0;
-int count3, i;
-char *orig1 = src;
 char *orig2 = dest;
 
 while (*dest != '\0')
