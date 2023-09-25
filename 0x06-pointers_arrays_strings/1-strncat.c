@@ -28,7 +28,7 @@ count2++;
 }
 src = orig1;
 count3 = count1 + count2;
-for (i = count3 - count2; i < count1 + n; i++)
+for (i = count3 - count2; i < count1 + n && *src != 0; i++)
 {
 *dest = *src;
 src++;
