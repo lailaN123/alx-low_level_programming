@@ -26,6 +26,7 @@ while (*src != 0)
 src++;
 count2++;
 }
+
 src = orig1;
 count3 = count1 + count2;
 for (i = count3 - count1; i < count1 + n && *src != 0; i++)
@@ -34,6 +35,7 @@ for (i = count3 - count1; i < count1 + n && *src != 0; i++)
 src++;
 dest++;
 }
+*dest = '\0';
 dest = orig2;
 return (dest);
 }
