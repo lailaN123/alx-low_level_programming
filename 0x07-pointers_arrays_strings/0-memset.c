@@ -11,7 +11,7 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 int count = 0;
-int i;
+unsigned int i;
 char *orig = s;
 
 while (*s != '\0')
