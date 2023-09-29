@@ -9,7 +9,7 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-char *ac = accept;
+	char *ac = accept;
 
 	while (*s != '\0')
 	{
@@ -18,21 +18,11 @@ char *ac = accept;
 		{
 			if (*ac == *s)
 			{
-				break;
+				return (s);
 			}
-			else
-			{
-				ac++;
-			}
+		ac++;
 		}
-		if (*ac == *s)
-		{
-			return (s);
-		}
-			else
-		{
-			s++;
-		}
+	s++;
 	}
 return (0);
 }
