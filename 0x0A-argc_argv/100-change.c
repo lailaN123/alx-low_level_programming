@@ -30,8 +30,8 @@ int main(int argc, char *argv[])
 	}
 	for (i = 0; i < 5; i++)
 	{
-		count = count + cents / coins[i];
-		cents = cents % coins[i];
+	count += cents / coins[i];
+	cents %= coins[i];
 	}
 
 	printf("%d\n", count);
