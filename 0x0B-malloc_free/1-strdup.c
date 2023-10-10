@@ -14,16 +14,17 @@ char *_strdup(char *str)
 	char *orig1 = str;
 	char *orig2;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	while (*str != '\0')
 	{
 		str++;
 		count++;
 	}
 	str = orig1;
-	if (str == NULL)
-	{
-		return (NULL);
-	}
 	s = malloc(count * sizeof(char) + 1);
 	orig2 = s;
 	if (s == NULL)
