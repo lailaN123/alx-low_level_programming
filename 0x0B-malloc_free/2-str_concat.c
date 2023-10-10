@@ -12,6 +12,7 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	int c1 = 0;
 	int c2 = 0;
+	char *s;
 	char *orig1 = s1;
 	char *orig2 = s2;
 
@@ -31,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	s1 = orig1;
 	s2 = orig2;
-	char *str = malloc(sizeof(char) * (c1 + c2 + 1));
+	str = malloc(sizeof(char) * (c1 + c2 + 1));
 
 	if (str == NULL)
 		return (NULL);
