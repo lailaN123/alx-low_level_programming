@@ -7,7 +7,7 @@
  *
  * Return: number of words
  */
-int count_word(char *s)
+int count_w(char *s)
 {
 	int flag, i, word;
 
@@ -53,21 +53,21 @@ char **strtow(char *str)
 	{
 		if (str[j] == ' ' || str[j] == '\0')
 		{
-			if ()
+			if (n)
 			{
 				end = j;
-				tmp = (char *) malloc(sizeof(char) * (c + 1));
+				tmp = (char *) malloc(sizeof(char) * (n + 1));
 				if (tmp == NULL)
 					return (NULL);
 				while (start < end)
 					*tmp++ = str[start++];
 				*tmp = '\0';
-				matrix[k] = tmp - c;
+				matrix[k] = tmp - n;
 				k++;
-				c = 0;
+				n = 0;
 			}
 		}
-		else if (c++ == 0)
+		else if (n++ == 0)
 			start = j;
 	}
 
