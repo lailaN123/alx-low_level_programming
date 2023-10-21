@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 
 	str1 = argv[1], str2 = argv[2];
 	if (argc != 3 || !is_dig(str1) || !is_dig(str2))
-		errors();
+		error();
 	len1 = _strlen(str1);
 	len2 = _strlen(str2);
 	len = len1 + len2 + 1;
